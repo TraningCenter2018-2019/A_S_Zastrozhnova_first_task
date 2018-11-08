@@ -1,4 +1,4 @@
-= *Канадский кроссворд*
+﻿= *Канадский кроссворд*
 
 image::images/crossword_example.jpg[crossword img]
 
@@ -6,6 +6,6 @@ image::images/crossword_example.jpg[crossword img]
 
 == Модули
 
-- include::modules_descriptions/crossword_generator.adoc[Модуль взаимодействия с пользователем]
+- link:modules_descriptions/crossword_generator.adoc[Модуль взаимодействия с пользователем]
 
-- include::modules_descriptions/user_features.adoc[Модуль генерации кроссворда]
+- link:modules_descriptions/user_features.adoc[Модуль генерации кроссворда]

@@ -1,8 +1,8 @@
-include::../info_main.adoc[На главную..]
+link:../info_main.adoc[На главную..]
 
 = Mодуль генерации кроссворда
 
-include::../uml_diagrams/crossword_generator.plum[Crossword Generator]
+link:../uml_diagrams/crossword_generator.plum[Crossword Generator - UML]
 
 Задача, возложенная на данный модуль, состоит в сосавлении канадского кроссворда установленной размерности из заданных слов.
 
