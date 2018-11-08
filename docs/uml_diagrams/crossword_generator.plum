@@ -1,0 +1,26 @@
+@startuml
+
+title Crossword Generetor
+
+interface IGenerator{
+  void SetConfig(words,int size)
+  GetCrossword()
+}
+
+class  Generator{
+  -list usedWords
+  -list bestUsedWords
+  -list sortWords
+  -int betsPercentOfUsedWords
+  -crossword
+
+  +void Generetor()
+  +void SetConfig(words,int size)
+  +GetCrossword()
+  -void ReplaceTheBest();
+  -bool TryToAddWord(word)
+}
+
+Generator..IGenerator
+
+@enduml

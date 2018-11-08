@@ -1,0 +1,57 @@
+@startuml
+
+title User Features
+
+class  CrossWordConfigurator{
+  -Map<String, String> dictionary
+  -int sizeX
+  -int sizeY
+  
+  +void CrossWordConfigurator(size)
+  +void AddWord(string word, string description)
+  +void DelWord(string word)
+  +SetSize(size)
+  +GetCrossword()
+}
+
+class CrossWordPlayer{
+    -bool MargeWord(int number, string  word)
+    +bool CheckandMargeWord(string str)
+    +bool CheckCrossword()
+}
+
+class GameMenu{
+    -crosswordFullFilled
+    -crosswordForPlayer
+    -CrossWordConfigurator cwConf
+    -CrossWordPlayer cwPlayer
+    -MenuDrawer driver
+    
+    void mainMenu()
+    void Play()
+    bool AddWordByPlayer()
+    bool DelWordByPlayer()
+    void CheckCrossword()
+    void Configure()
+    bool AddWordByCreator()
+    bool DelWordByCreator()
+    bool SetSize()
+    void GenerateCrosword()
+    bool CheckCrossword()
+    void Help()
+    void Exit()
+}
+
+class MenuDrawer{
+    +void DriveMain()
+    +void DrivePlay(table)
+    +void DriveTable(table)
+    +void DriveHelp(table)
+    +void DriveExit()
+}
+
+GameMenu*--MenuDrawer
+GameMenu*--CrossWordPlayer
+GameMenu*--CrossWordConfigurator
+
+@enduml
